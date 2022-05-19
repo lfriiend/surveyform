@@ -1,0 +1,152 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    font-size: 62.5%;
+
+    --color-white: rgb(243, 243, 243);
+    --color-purple: rgba(41, 10, 126, 0.59);
+    --color-green: rgb(19, 190, 19);
+    --color-darkgreen: rgb(13, 139, 13);
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+
+    color: var(--color-white);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+
+/*header */
+
+header .logo {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+header .logo h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* background */
+
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)),
+        url(../survey/images/header_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* section FORM */
+
+.container>h1 {
+
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container>h2 {
+
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 100;
+
+    margin-inline: 8rem;
+    margin-bottom: 2rem;
+}
+
+section .survey {
+    /* background */
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 480px;
+    background-color: var(--color-purple);
+
+
+    /*content */
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.survey input[type=text],
+input[type=number],
+input[type=email],
+select {
+    width: 100%;
+    outline: none;
+    padding: .4rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+textarea {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-green);
+    border: none;
+    border-radius: 2px;
+
+    font-weight: 400;
+    color: white;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-darkgreen);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 1rem;
+    background-color: black;
+
+}
+
+.copyright {
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="author" content="Lucas Sales Oliveira">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1 class="text-center">&ltlucas.sales/&gt</h1>
+        </div>
+
+    </header>
+
+    <section class="container">
+        <h1 class="text-center">Survey Form Project</h1>
+        <h2 class="text-center">Welcome to my Survey Form, hope you enjoy it!</h2>
+
+        <form class="survey">
+            <label>Name</label>
+            <input type="text" placeholder="Your name here" required>
+            <label>E-mail</label>
+            <input type="email" placeholder="Your e-mail here" required>
+            <label>Phone</label>
+            <input type="text" placeholder="Your phone here" required>
+            <label>Age (Optional) </label>
+            <input type="number" placeholder="Age" min="10" max="99">
+            <label>Which option best describes your current role?</label>
+            <select name="role" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="fulltime">Full Time Job</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <label>Would you like to see more projects?</label>
+
+            <div>
+                <input type="radio" name="interview" required>
+                <label>Yes</label>
+            </div>
+
+            <div>
+                <input type="radio" name="interview">
+                <label>No</label>
+            </div>
+
+            <div>
+                <input type="radio" name="interview">
+                <label>Maybe</label>
+            </div>
+            <br>
+
+            <label class="checkbox">What do you expect from me?</label>
+
+            <div>
+                <input type="checkbox" name="css">
+                <label for="css">CSS</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="html">
+                <label for="html">HTML</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="javascript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="react">
+                <label for="react">React</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="angular">
+                <label for="angular">Angular</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="other">
+                <label for="other">Other</label>
+            </div>
+
+            <br>
+
+            <label>Any comments or suggestions?</label>
+
+            <br>
+            <textarea></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>Lucas Sales &copy; Copyright 2022 </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
